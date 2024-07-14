@@ -1,7 +1,11 @@
 variable "bucket_name" {
-  description = "S3 bucket name to use for the Terraform state files. Will use `tf-state` as a prefix, if not supplied"
+  description = "S3 bucket name. Cannot be used in combination with `bucket_prefix`."
   default     = null
   type        = string
+}
+
+variable "bucket_prefix" {
+  description = "Prefix name to use for the S3 bucket. Cannot be used in combination with `bucket_name`."
 }
 
 variable "default_tags" {
