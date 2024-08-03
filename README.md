@@ -30,8 +30,8 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_bucket_prefix"></a> [bucket\_prefix](#input\_bucket\_prefix) | Prefix name to use for the S3 bucket. Cannot be used in combination with `bucket_name`. | `any` | n/a | yes |
 | <a name="input_bucket_name"></a> [bucket\_name](#input\_bucket\_name) | S3 bucket name. Cannot be used in combination with `bucket_prefix`. | `string` | `null` | no |
-| <a name="input_default_tags"></a> [default\_tags](#input\_default\_tags) | Key/value pairs for additional default tags to add to resources | `map(string)` | `{}` | no |
 | <a name="input_force_destroy"></a> [force\_destroy](#input\_force\_destroy) | When `true`, permits a non-empty S3 bucket to be deleted by first deleting all objects in the bucket. | `bool` | `false` | no |
+| <a name="input_tags"></a> [tags](#input\_tags) | Key/value pairs for additional default tags to add to resources | `map(string)` | `{}` | no |
 | <a name="input_versioning_enabled"></a> [versioning\_enabled](#input\_versioning\_enabled) | A state of versioning. Versioning is a means of keeping multiple variants of an object in the same bucket | `bool` | `true` | no |
 
 #### Outputs

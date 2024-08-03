@@ -3,7 +3,7 @@ resource "aws_s3_bucket" "this" {
   bucket_prefix = var.bucket_prefix == null ? var.bucket_prefix : null
   force_destroy = var.force_destroy
 
-  tags = var.default_tags
+  tags = var.tags
 }
 
 resource "aws_s3_bucket_server_side_encryption_configuration" "this" {

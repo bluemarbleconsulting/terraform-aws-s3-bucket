@@ -8,17 +8,17 @@ variable "bucket_prefix" {
   description = "Prefix name to use for the S3 bucket. Cannot be used in combination with `bucket_name`."
 }
 
-variable "default_tags" {
-  description = "Key/value pairs for additional default tags to add to resources"
-  default     = {}
-  type        = map(string)
-}
-
 variable "force_destroy" {
   default     = false
   description = "When `true`, permits a non-empty S3 bucket to be deleted by first deleting all objects in the bucket."
   type        = bool
   nullable    = false
+}
+
+variable "tags" {
+  description = "Key/value pairs for additional default tags to add to resources"
+  default     = {}
+  type        = map(string)
 }
 
 variable "versioning_enabled" {
