@@ -40,3 +40,4 @@ No modules.
 |------|-------------|
 | <a name="output_bucket_arn"></a> [bucket\_arn](#output\_bucket\_arn) | Bucket ARN |
 | <a name="output_bucket_id"></a> [bucket\_id](#output\_bucket\_id) | Bucket Name (ID) |
+| <a name="output_bucket_regional_domain_name"></a> [bucket\_regional\_domain\_name](#output\_bucket\_regional\_domain\_name) | Bucket regional domain name |
